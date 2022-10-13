@@ -14,6 +14,9 @@ class MyLinkedList:
         if index < 0 or index >= self.size:
             return -1
         curr = self.head
+        if not curr:
+            return -1
+            
         for _ in range(index):
             curr = curr.next
         return curr.val
