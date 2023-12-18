@@ -18,7 +18,7 @@ class MyLinkedList:
         if not curr:
             return -1
             
-        for _ in range(index):
+        for i in range(index):
             curr = curr.next
         return curr.val
 
