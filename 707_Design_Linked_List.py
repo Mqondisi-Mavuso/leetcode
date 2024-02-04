@@ -22,7 +22,7 @@ class MyLinkedList:
             curr = curr.next
         return curr.val
 
-    def addAtHead(self, val: int) -> None:
+    def addAtHead(self, val:  int) -> None:
         new_node = Node(val)
         if self.head.val is None:
             self.head = new_node
